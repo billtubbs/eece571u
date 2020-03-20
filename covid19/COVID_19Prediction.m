@@ -30,4 +30,7 @@ xlabel('Days starting from March 2 to March 31', 'FontSize', 16);
 ylabel('number of COVID-19', 'FontSize', 16);
 lgd = legend('actual cases', 'predicted cases');
 lgd.FontSize = 16;
+grid on
 title('Predicting COVID-19 Growth in BC', 'FontSize', 16);
+saveas(gcf, 'covid_growth_bc.png')
+
